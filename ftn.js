@@ -51,6 +51,8 @@
     // }
 
     var currentNumber = 1;
+    var currentNumberShow = document.querySelector('.js-current-number')
+    currentNumberShow.textContent = currentNumber;
 
     table.addEventListener('click', function(event) {
         var clickedElement = event.target;
@@ -71,6 +73,7 @@
             }
 
             currentNumber++;
+            currentNumberShow.textContent = currentNumber;
             
         }
     });
@@ -163,6 +166,7 @@
 
     function resetGame() {
         currentNumber = 1;
+        currentNumberShow.textContent = currentNumber;
         shuffledNumbers = shuffle(numbers);
 
         table.innerHTML = '';
