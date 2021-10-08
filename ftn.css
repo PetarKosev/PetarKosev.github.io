@@ -20,12 +20,20 @@ button {
     font-family: inherit;
 }
 
+.container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;    
+    margin: 0 auto;
+}
+
 .js-current-number {
     color: white;
     font-size: 4rem;
     border: solid;
     text-align: center;
-    width: 50vw;
+    width: 5vw;
     margin: 1rem auto 0 auto;
 }
 
